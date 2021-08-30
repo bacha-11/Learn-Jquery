@@ -126,18 +126,27 @@
 
 
         // animation in jquery using animate.
+        // $("#btn1").click(function(){
+        //     $("#pra").animate({
+        //         backgroundColor: "green",
+        //         color: "#fff",
+        //         fontSize: "70px"
+        //     }, 5000);
+        // });
+
+
+        // $("#btn2").click(function(){
+        //     $("#pra").stop()
+        // });
+
+
+        // callback function in jQuery 
         $("#btn1").click(function(){
-            $("#pra").animate({
-                backgroundColor: "green",
-                color: "#fff",
-                fontSize: "70px"
-            }, 5000);
-        });
+            $("#pra").hide(2000, function(){
+                alert('the text is been hidden')
+            });
 
-
-        $("#btn2").click(function(){
-            $("#pra").stop()
-        });
+        })
 
 
 
