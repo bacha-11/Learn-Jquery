@@ -14,6 +14,8 @@
     <p class="pra">this is p2.</p>
     <p class="pra">this is p3.</p>
 
+    <button id="btn">click me</button>
+
 
     <script>
         // what jquery do
@@ -31,16 +33,43 @@
         // jquery selector's
 
         // tag selector
-        $('p').hide()
+        // $('p').hide()
 
         // id selector 
-        $("#pra1").hide()
+        // $("#pra1").hide()
 
         // class selector 
-        $(".pra").hide()
+        // $(".pra").hide()
 
         // staric '*' selector -. * mean select all
-        $("*").hide()
+        // $("*").hide()
+
+
+
+        // jquery events 
+
+        // single events
+        $(".pra").mouseenter(function(){
+            $(this).css('color', 'red')
+        });
+
+
+        $(".pra").mouseleave(function(){
+            $(this).css('color', 'black')
+        });
+
+
+        // multiple events
+        $("#btn").on({
+
+            mouseenter: function(){
+                $("#pra1").hide();
+            },
+
+            mouseleave: function(){
+                $("#pra1").show()
+            }
+        });
 
     </script>
     
