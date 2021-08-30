@@ -80,14 +80,30 @@
 
         // effect in jquery
 
+        // $("#btn1").click(function(){
+        //     $("#pra").hide(1000)
+        // });
+
+
+        // $("#btn2").click(function(){
+        //     $("#pra").show(2000)
+        // })
+
+
         $("#btn1").click(function(){
-            $("#pra").hide(1000)
+            $("#pra").fadeOut(1000)
         });
 
 
         $("#btn2").click(function(){
-            $("#pra").show(2000)
-        })
+            $("#pra").fadeIn(2000)
+        });
+
+
+        $("#btn3").click(function(){
+            $("#pra").fadeToggle(2000)
+        });
+
 
 
     </script>
