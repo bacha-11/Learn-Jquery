@@ -11,7 +11,9 @@
 <body>
 
     <!-- <h1 id="hide_h1">This is h1 tag</h1> -->
+    <div id="con">
     <h1 id="pra">this is p1.</h1>
+    </div>
 
     <button id="btn1">hide</button>
     <button id="btn2">show</button>
@@ -150,11 +152,31 @@
 
 
         // chaning in jquery
+        // $("#btn1").click(function(){
+        //     $("#pra").css("color", "blue").fadeToggle(2000)
+        // })
+
+
+// *************************************************************
+
+
+        // html manipuation
+
         $("#btn1").click(function(){
-            $("#pra").css("color", "blue").fadeToggle(2000)
+            var txt = $("#pra").text();
+            alert(txt)
         })
 
+        $("#btn2").click(function(){
+            $("#pra").text('replace text');
+        })
 
+        $("#btn3").click(function(){
+            var html = $("#con").html();
+            alert(html)
+        })
+
+        
 
     </script>
     
