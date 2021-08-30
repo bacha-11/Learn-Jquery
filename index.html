@@ -141,11 +141,17 @@
 
 
         // callback function in jQuery 
-        $("#btn1").click(function(){
-            $("#pra").hide(2000, function(){
-                alert('the text is been hidden')
-            });
+        // $("#btn1").click(function(){
+        //     $("#pra").hide(2000, function(){
+        //         alert('the text is been hidden')
+        //     });
 
+        // })
+
+
+        // chaning in jquery
+        $("#btn1").click(function(){
+            $("#pra").css("color", "blue").fadeToggle(2000)
         })
 
 
