@@ -10,11 +10,12 @@
 <body>
 
     <!-- <h1 id="hide_h1">This is h1 tag</h1> -->
-    <p id="pra1">this is p1.</p>
-    <p class="pra">this is p2.</p>
-    <p class="pra">this is p3.</p>
+    <h1 id="pra">this is p1.</h1>
+    
 
-    <button id="btn">click me</button>
+    <button id="btn1">hide</button>
+    <button id="btn2">show</button>
+    <button id="btn3">both</button>
 
 
     <script>
@@ -46,30 +47,48 @@
 
 
 
+// ***********************************************************
+
+
         // jquery events 
 
         // single events
-        $(".pra").mouseenter(function(){
-            $(this).css('color', 'red')
+        // $(".pra").mouseenter(function(){
+        //     $(this).css('color', 'red')
+        // });
+
+
+        // $(".pra").mouseleave(function(){
+        //     $(this).css('color', 'black')
+        // });
+
+
+        // // multiple events
+        // $("#btn").on({
+
+        //     mouseenter: function(){
+        //         $("#pra1").hide();
+        //     },
+
+        //     mouseleave: function(){
+        //         $("#pra1").show()
+        //     }
+        // });
+
+
+// ***********************************************************
+
+        // effect in jquery
+
+        $("#btn1").click(function(){
+            $("#pra").hide(1000)
         });
 
 
-        $(".pra").mouseleave(function(){
-            $(this).css('color', 'black')
-        });
+        $("#btn2").click(function(){
+            $("#pra").show(2000)
+        })
 
-
-        // multiple events
-        $("#btn").on({
-
-            mouseenter: function(){
-                $("#pra1").hide();
-            },
-
-            mouseleave: function(){
-                $("#pra1").show()
-            }
-        });
 
     </script>
     
