@@ -15,6 +15,8 @@
     <h1 id="pra">this is p1.</h1>
     </div>
 
+    <input type="text" id="text">
+
     <button id="btn1">hide</button>
     <button id="btn2">show</button>
     <button id="btn3">both</button>
@@ -162,19 +164,36 @@
 
         // html manipuation
 
+        // $("#btn1").click(function(){
+        //     var txt = $("#pra").text();
+        //     alert(txt)
+        // })
+
+        // $("#btn2").click(function(){
+        //     $("#pra").text('replace text');
+        // })
+
+        // $("#btn3").click(function(){
+        //     var html = $("#con").html();
+        //     alert(html)
+        // })
+
+
+// **************************************************************
+
+        // GET form value in jQuery
+
         $("#btn1").click(function(){
-            var txt = $("#pra").text();
-            alert(txt)
-        })
+            var get_value = $("#text").val()
+            $("#pra").text(get_value)
+            $("#text").val('')
+        });
+
 
         $("#btn2").click(function(){
-            $("#pra").text('replace text');
-        })
-
-        $("#btn3").click(function(){
-            var html = $("#con").html();
-            alert(html)
-        })
+            var get_value = $("#pra").text()
+            $("#text").val(get_value)
+        });
 
         
 
