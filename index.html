@@ -181,18 +181,43 @@
 
 // **************************************************************
 
-        // GET form value in jQuery
+        // GET & SET form value in jQuery
+
+        // $("#btn1").click(function(){
+        //     var get_value = $("#text").val()
+        //     $("#pra").text(get_value)
+        //     $("#text").val('')
+        // });
+
+
+        // $("#btn2").click(function(){
+        //     var get_value = $("#pra").text()
+        //     $("#text").val(get_value)
+        // });
+
+
+
+// **************************************************************
+
+
+        // GET & SET attribute in jQuery
 
         $("#btn1").click(function(){
-            var get_value = $("#text").val()
-            $("#pra").text(get_value)
-            $("#text").val('')
+           var get_value = $("#text").attr("class")
+           alert(get_value)
+        });
+
+        
+        $("#btn2").click(function(){
+           $("#text").attr("class", "classtext")
         });
 
 
-        $("#btn2").click(function(){
-            var get_value = $("#pra").text()
-            $("#text").val(get_value)
+        $("#btn3").click(function(){
+           $("#text").attr({
+               "class": "classtext",
+               "placeholder": "enter text"
+           })
         });
 
         
