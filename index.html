@@ -21,6 +21,11 @@
     <button id="btn2">show</button>
     <button id="btn3">both</button>
 
+    <ul id="list">
+        <li>green</li>
+        <li>red</li>
+        <li>white</li>
+    </ul>
 
     <script>
         // what jquery do
@@ -202,23 +207,33 @@
 
         // GET & SET attribute in jQuery
 
-        $("#btn1").click(function(){
-           var get_value = $("#text").attr("class")
-           alert(get_value)
-        });
+        // $("#btn1").click(function(){
+        //    var get_value = $("#text").attr("class")
+        //    alert(get_value)
+        // });
 
         
-        $("#btn2").click(function(){
-           $("#text").attr("class", "classtext")
-        });
+        // $("#btn2").click(function(){
+        //    $("#text").attr("class", "classtext")
+        // });
 
 
-        $("#btn3").click(function(){
-           $("#text").attr({
-               "class": "classtext",
-               "placeholder": "enter text"
-           })
-        });
+        // $("#btn3").click(function(){
+        //    $("#text").attr({
+        //        "class": "classtext",
+        //        "placeholder": "enter text"
+        //    })
+        // });
+
+
+// **************************************************************
+
+        // add Element in html using jQuery
+
+        $("#list").before("<p>before the ul tag</p>")
+        $("#list").prepend("<li>add first child.</li>")
+        $("#list").append("<li>add list child.</li>")
+        $("#list").after("<p>after the ul tag</p>")
 
         
 
