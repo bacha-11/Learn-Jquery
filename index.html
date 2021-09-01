@@ -12,7 +12,8 @@
             .box{
                     width: 200px;
                     height: 200px;
-                    margin-bottom: 1rem;
+                    margin: 10px;
+                    padding: 10px;
                     border: 1px solid red;
             }
 
@@ -262,18 +263,51 @@
 
 
         // add and remove class from Element
-        $("#btn1").click(function(){
-                $("#con").addClass("circle")
-        });
+        // $("#btn1").click(function(){
+        //         $("#con").addClass("circle")
+        // });
         
 
-        $("#btn2").click(function(){
-                $("#con").removeClass("circle")
-        })
+        // $("#btn2").click(function(){
+        //         $("#con").removeClass("circle")
+        // })
 
-        $("#btn3").click(function(){
-                $("#con").toggleClass("bg")
-        });
+        // $("#btn3").click(function(){
+        //         $("#con").toggleClass("bg")
+        // });
+
+
+// **************************************************************
+
+        // how to get height and width of the container
+
+        var get_width = $("#con").width()  // only width
+        console.log(get_width)
+
+        var get_width = $("#con").innerWidth() // width and padding
+        console.log(get_width)
+
+        var get_width = $("#con").outerWidth() // width + padding + border
+        console.log(get_width)
+
+        var get_width = $("#con").outerWidth(true) // width + padding + border + margin
+        console.log(get_width)
+
+
+        var get_height = $("#con").height()  // only width
+        console.log(get_height)
+
+        var get_height = $("#con").innerHeight() // width and padding
+        console.log(get_height)
+
+        var get_height = $("#con").outerHeight() // width + padding + border
+        console.log(get_height)
+
+        var get_height = $("#con").outerHeight(true) // width + padding + border + margin
+        console.log(get_height)
+
+
+
 
 
         
