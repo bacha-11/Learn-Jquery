@@ -7,11 +7,28 @@
     <script src="jquery-3.6.0.min.js"></script>
     <script src="jquery.color.js"></script>
     <title>Document</title>
+
+    <style>
+            .box{
+                    width: 200px;
+                    height: 200px;
+                    margin-bottom: 1rem;
+                    border: 1px solid red;
+            }
+
+            .bg{
+                    background-color: brown;
+            }
+
+            .circle{
+                    border-radius: 50%;
+            }
+    </style>
 </head>
 <body>
 
     <!-- <h1 id="hide_h1">This is h1 tag</h1> -->
-    <div id="con">
+    <div id="con" class="box bg">
     <h1 id="pra">this is p1.</h1>
     </div>
 
@@ -26,6 +43,8 @@
         <li>red</li>
         <li>white</li>
     </ul>
+
+
 
     <script>
         // what jquery do
@@ -238,8 +257,18 @@
 
         // empty and remove Elements from the selected element
 
-        $("#list").empty() 
-        $("#list").remove()
+        // $("#list").empty() 
+        // $("#list").remove()
+
+
+        // add and remove class from Element
+        $("#btn1").click(function(){
+                $("#con").addClass("circle")
+        });
+
+        $("#btn2").click(function(){
+                $("#con").removeClass("circle")
+        })
 
 
 
