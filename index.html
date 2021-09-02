@@ -41,7 +41,10 @@
 
     <ul id="list">
         <li>green</li>
-        <li>red</li>
+        <li id="item1">red</li>
+        <li>white</li>
+        <li>green</li>
+        <li id="item2">red</li>
         <li>white</li>
     </ul>
 
@@ -281,33 +284,48 @@
 
         // how to get height and width of the container
 
-        var get_width = $("#con").width()  // only width
-        console.log(get_width)
+        // var get_width = $("#con").width()  // only width
+        // console.log(get_width)
 
-        var get_width = $("#con").innerWidth() // width and padding
-        console.log(get_width)
+        // var get_width = $("#con").innerWidth() // width and padding
+        // console.log(get_width)
 
-        var get_width = $("#con").outerWidth() // width + padding + border
-        console.log(get_width)
+        // var get_width = $("#con").outerWidth() // width + padding + border
+        // console.log(get_width)
 
-        var get_width = $("#con").outerWidth(true) // width + padding + border + margin
-        console.log(get_width)
-
-
-        var get_height = $("#con").height()  // only width
-        console.log(get_height)
-
-        var get_height = $("#con").innerHeight() // width and padding
-        console.log(get_height)
-
-        var get_height = $("#con").outerHeight() // width + padding + border
-        console.log(get_height)
-
-        var get_height = $("#con").outerHeight(true) // width + padding + border + margin
-        console.log(get_height)
+        // var get_width = $("#con").outerWidth(true) // width + padding + border + margin
+        // console.log(get_width)
 
 
+        // var get_height = $("#con").height()  // only width
+        // console.log(get_height)
 
+        // var get_height = $("#con").innerHeight() // width and padding
+        // console.log(get_height)
+
+        // var get_height = $("#con").outerHeight() // width + padding + border
+        // console.log(get_height)
+
+        // var get_height = $("#con").outerHeight(true) // width + padding + border + margin
+        // console.log(get_height)
+
+
+// **************************************************************
+
+
+        var prnt = $("#item1").parent()
+        prnt.css('border', '1px solid blue')
+
+        var prnts = $("#item1").parents()
+        prnts.css('border', '1px solid red')
+
+
+        var prnts_u = $("#item1").parentsUntil("body")
+        prnts_u.css('border', '1px solid green')
+
+
+        var child = $("#list").children()
+        child.css("color", 'blue')
 
 
         
