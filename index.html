@@ -313,6 +313,7 @@
 // **************************************************************
 
 
+        // access parent and child in jquery
         var prnt = $("#item1").parent()
         prnt.css('border', '1px solid blue')
 
@@ -325,6 +326,9 @@
 
 
         var child = $("#list").children()
+        child.css("border", '1px solid blue')
+
+        var child = $("#item1").siblings()
         child.css("color", 'blue')
 
 
