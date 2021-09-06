@@ -331,6 +331,26 @@
         var child = $("#item1").siblings()
         child.css("color", 'blue')
 
+        var find_element = $("#list").find("#item1")
+        find_element.css('color', 'yellow')
+
+        var select_next_elm = $("#item1").next()
+        select_next_elm.css('color', 'orange')
+
+        var select_next_elm = $("#item1").next().next()
+        select_next_elm.css('color', 'gold')
+
+        var next_all_elm = $("#item1").nextAll()
+        next_all_elm.css('font-size', '25px')
+
+        var nextuntil_elm = $("#item1").nextUntil("#item2")
+        nextuntil_elm.css('color', 'black')
+
+
+        var prev_elm = $("#item1").prev()
+        prev_elm.css('color', 'brown')
+
+
 
         
 
